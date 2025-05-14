@@ -1,0 +1,299 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+}
+
+/* ヘッダー固定 */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0077b6;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f8f8f8;
+}
+
+/* 上：会社名表示 */
+.header-top {
+  padding: 20px 20px 10px;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+/* 下：ナビゲーションリンク */
+.main-nav {
+  background-color: #00649c;
+  width: 100%;
+  padding: 10px 0 15px;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e0f7fa;
+}
+
+/* ロゴアニメーション */
+.hero img {
+  animation: logoAppear 1.2s ease-out forwards;
+}
+
+@keyframes logoAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* コンテンツ共通 */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* SNSリンクエリア */
+.sns-area {
+  background: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sns-area h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sns-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.sns-icons img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease;
+}
+
+.sns-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* フッター */
+footer {
+  background: #0077b6;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .property {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  color: white;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero-overlay p {
+  font-size: 1.2em;
+}
+
+/* サービス紹介 */
+..service-section {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.full-image-service img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  width: 280px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* コンセプトセクション */
+.concept-section {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.concept-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  color: white;
+  max-width: 80%;
+  font-size: 1.3em;
+  border-radius: 10px;
+}
+
+.reasons-section {
+  background: #f7fdfd;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.reasons-section h2 {
+  color: #0077b6;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.reasons-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  font-size: 1.05em;
+  line-height: 1.8;
+}
+
+.reasons-list li {
+  background: #ffffff;
+  border-left: 5px solid #00b4d8;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.other-business-heading {
+  background: #f4f4f4;
+  padding: 60px 20px 20px;
+  text-align: center;
+}
+
+.other-business-heading h2 {
+  font-size: 2em;
+  color: #0077b6;
+  margin: 0;
+}
+
+.web-consulting-section {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 300px;
+  padding: 120px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.web-consulting-section .overlay {
+  background-color: rgba(0, 0, 0, 0.55); /* 黒の半透明フィルター */
+  padding: 60px 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.web-consulting-section .text-box {
+  color: #ffffff;
+}
+
+.web-consulting-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.web-consulting-section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
